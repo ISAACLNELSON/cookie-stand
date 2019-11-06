@@ -94,19 +94,19 @@ appendToHTML('limaData', 'bullet', 'td', limCookies, 'lim-row');
 
 
 
-var totalPerDay = {
+var totalPerHour = {
     total: [],
-    getTotalToday: function () {
-        var dailyYield;
+    getTotalHour: function () {
+        var hourlyYield;
         for (i = 0; i < hours.length; i++) {
-            dailyYield = 0;
-            dailyYield = dailyYield + seaCookies[i] + tokCookies[i] + dubCookies[i] + parCookies[i] + limCookies[i];
-            this.total.push(dailyYield);
+            hourlyYield = 0;
+            hourlyYield = hourlyYield + seaCookies[i] + tokCookies[i] + dubCookies[i] + parCookies[i] + limCookies[i];
+            this.total.push(hourlyYield);
         }
     }
 };
-totalPerDay.getTotalToday();   
-console.log(totalPerDay.total);    
-appendToHTML('totalData', 'bullet', 'td', totalPerDay.total, 'store-total');
+totalPerHour.getTotalHour();   
+console.log(totalPerHour.total);    
+appendToHTML('totalData', 'bullet', 'td', totalPerHour.total, 'store-total');
 
 //needs to iterate over all city arrays at once, returning the sum of all current indexs in all arrays then moving on.
