@@ -1,0 +1,78 @@
+body {
+    background-image: url(sound_sunset.jpg);
+}
+header {
+    background-color: skyblue;
+    /* height: 150%; */
+    margin-bottom: 0px;
+    padding-top: 1px;
+    width: 100%;
+    height: 80px;
+    border-bottom: tomato 9px solid;
+}
+#first-salmon {
+    position: absolute;
+    top: 15px; left: 17%;
+    background-color: rgb(235, 150, 81);
+    border: brown 2px solid;
+    border-radius: 40%;
+    transform: scaleX(-1);
+}
+#second-salmon {
+    position: absolute;
+    top: 15px; left: 66%;
+    background-color: rgb(235, 150, 81);
+    border: brown 2px solid;
+    border-radius: 40%;
+}
+h1 {
+    margin-left: 34%;
+    color: tomato;
+    padding-bottom: 100px;
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 40px;
+    text-decoration: overline;
+    
+}
+h2 {
+    color: rgb(194, 61, 38);
+    border-top: tomato 3px solid;
+    border-left: tomato 3px solid;
+    border-right: tomato 3px solid;
+    float: left;
+    background-color: skyblue;
+    padding: 3px;
+    margin-bottom: 0px;
+    margin-top: 10px;
+    font-size: 24px;
+}
+table {
+    margin-top: 0px;
+    font-size: 18px;
+    font-family: sans-serif;
+    float: left;
+    border: 10px tomato solid;
+    table-layout: fixed;
+    width: 90%;
+    text-align: center;
+    border-collapse: collapse;
+    
+}
+
+tr {
+    height: 50px;
+    border: solid 2px tomato;
+    
+}
+th {
+    font-size: 14px;
+    color: rgb(34, 26, 25);
+    background-color: salmon;
+}
+.left-column {
+    background-color: salmon;
+}
+td {
+    background-color: rgb(206, 225, 233);
+    
+}
