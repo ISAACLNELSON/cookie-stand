@@ -58,21 +58,40 @@ table {
     border-collapse: collapse;
     
 }
-
-tr {
-    height: 50px;
-    border: solid 2px tomato;
-    
+#store-total {
+    width: 190%;
 }
+
+
 th {
     font-size: 14px;
     color: rgb(34, 26, 25);
     background-color: salmon;
 }
-.left-column {
+/* .left-column {
     background-color: salmon;
-}
+} */
 td {
     background-color: rgb(206, 225, 233);
     
+}
+div {
+    margin-bottom: 1px;
+}
+main {
+    margin-top: 1px;
+}
+fieldset {
+    border: skyblue 2px solid;
+    background-color: rgb(24, 145, 115);
+    /* position: absolute; */
+    float: right;
+    margin-top: 0%;
+}
+fieldset label {
+    background-color: skyblue;
+    padding-bottom: 7px;
+    padding-left: 7px;
+    padding-right: 7px;
+    margin-left: 0px;
 }

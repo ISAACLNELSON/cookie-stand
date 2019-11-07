@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <link rel="stylesheet" href="styles.css">
     <meta charset="UTF-8">
@@ -8,43 +9,43 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <header>
-            <img id="first-salmon" src="salmon-nb.png" width="150px">
-        <h1 > 
+        <img id="first-salmon" src="salmon-nb.png" width="150px">
+        <h1>
             Pat's Salmon Cookies
         </h1>
         <img id="second-salmon" src="salmon-nb.png" width="150px">
     </header>
     <div id="data">
         <h2> Todays Cookie Sales </h2>
-      <table border="1px">
-          <tr id="hour-row">
-              <th></th>
-          </tr>
-          <tr id="sea-row">
-              <td class="left-column">Seattle Store</td>
-          </tr>
-          <tr id="tok-row">
-              <td class="left-column">Tokyo Store</td>
-          </tr>
-          <tr id="dub-row">
-              <td class="left-column">Dubai Store</td>
-          </tr>
-          <tr id="par-row">
-              <td class="left-column">Paris Store</td>
-          </tr>
-          <tr id="lim-row">
-              <td class="left-column">Lima Store</td>
-          </tr>
-          <tr id="store-total">
-              <td class="left-column">Hourly Yield</td>
-          </tr>
-          
-      </table>
+        <table border="1px" id="city-table">
+            <tr id="store-total"></tr>
+        </table>
     </div>
-    <main></main>
+    <main>
+        <form id="city-form">
+            <fieldset>
+                <p>Add your city for an estimate</p>
+
+                <label for="newCity">New City:</label>
+                <input name="newCity" type="text" />
+
+                <label for="minCust">Minimum Customers:</label>
+                <input name="minCust" type="number" />
+
+                <label for="maxCust">Maximum Customers:</label>
+                <input name="maxCust" type="number" />
+
+                <label for="avgCust">Average Customers:</label>
+                <input name="avgCust" type="number" />
+                <button type="submit">Add New City</button>
+            </fieldset>
+        </form>
+    </main>
     <footer></footer>
     <script src="app.js"></script>
 </body>
+
 </html>
