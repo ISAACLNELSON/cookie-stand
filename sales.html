@@ -11,19 +11,29 @@
 </head>
 
 <body>
-    <header>
-        <img id="first-salmon" src="salmon-nb.png" width="150px">
-        <h1>
-            Pat's Salmon Cookies
-        </h1>
-        <img id="second-salmon" src="salmon-nb.png" width="150px">
-    </header>
+    <nav>
+        <article id="first-salmon-box">
+            <a href="index.html">Main Page</a>
+            <img id="first-salmon" src="salmon-nb.png" width="80px">
+        </article>
+        <header>
+            <h1>
+                Pat's Salmon Cookies
+            </h1>
+        </header>
+        <article id="second-salmon-box">
+            <a href="https://github.com/ISAACLNELSON">Author's Page</a>
+            <img id="second-salmon" src="salmon-nb.png" width="80px">
+        </article>
+    </nav>
+
     <div id="data">
         <h2> Todays Cookie Sales </h2>
         <table border="1px" id="city-table">
             <tr id="store-total"></tr>
         </table>
     </div>
+
     <main>
         <form id="city-form">
             <fieldset>
@@ -31,13 +41,13 @@
 
                 <label for="newCity">New City:</label>
                 <input name="newCity" type="text" />
-
+                <br>
                 <label for="minCust">Minimum Customers:</label>
                 <input name="minCust" type="number" />
-
+                <br>
                 <label for="maxCust">Maximum Customers:</label>
                 <input name="maxCust" type="number" />
-
+                <br>
                 <label for="avgCust">Average Customers:</label>
                 <input name="avgCust" type="number" />
                 <button type="submit">Add New City</button>
