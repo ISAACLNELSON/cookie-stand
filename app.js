@@ -37,7 +37,7 @@ function renderHourRow() {
     tr.append(th);
     target.append(tr);
 }
-renderHourRow();
+
 
 function City(name, minCustomers, maxCustomers, avgCookieSale) {
     this.name = name;
@@ -124,7 +124,7 @@ function City(name, minCustomers, maxCustomers, avgCookieSale) {
         }
         target.append(tr);
     }
-    this.appendToHTML();
+    // this.appendToHTML();
 }
 
 
@@ -169,25 +169,32 @@ function getTotalHour() {
         td.textContent = total[j];
         tr.append(td);
     }
-    
-    bottomRow.append(tr);
-    target.append(bottomRow)
+    target.append(tr)
 }
 
+newCityRow();
 function newCityRow() {
     var form = document.getElementById('city-form');
     form.addEventListener('submit', function (event) {
         event.preventDefault();
-        // alert(event.target.newCity.value);
-        //  alert(event.target.minCust.value);
-        //  alert(event.target.maxCust.value);
-        //  alert(event.target.avgCust.value);
+      
         var cityValue = event.target.newCity.value;
         var nextCity = new City(cityValue, parseInt(event.target.minCust.value), parseInt(event.target.maxCust.value), parseFloat(event.target.avgCust.value), 'city-table');
-        getAvgCustAndTotal(cityValue, this.cookiesSoldPerHour);
         cities.push(nextCity);
+        console.log(nextCity)
+        cleanAndRender()
     })
 }
+function cleanAndRender(){
+    target.innerHTML = "";
+    renderHourRow();
+    for(cityIndex = 0; cityIndex < cities.length; cityIndex++){
+        var currentCity = cities[cityIndex];
+        currentCity.appendToHTML();
+    }
+    
+    getTotalHour();
+    console.log(cities);
+}
 
-newCityRow();
-getTotalHour(bottomRow);
+cleanAndRender();
