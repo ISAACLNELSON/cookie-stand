@@ -50,6 +50,12 @@ nav {
     font-family: 'Berkshire Swash', cursive;
     z-index: 1;
 }
+#first-salmon-box a:hover {
+    color: blue;
+}
+#second-salmon-box a:hover {
+    color: blue;
+}
 #second-salmon {
     position: relative;
     top: 0px; left: -50px;
